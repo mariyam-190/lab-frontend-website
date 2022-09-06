@@ -1,0 +1,184 @@
+:root {
+  --clr-1: #e8e8e8;
+  --clr-2: #f54e2d;
+  --clr-3: #020202;
+}
+
+body {
+  height: 100vh;
+  background-color: var(--clr-1) !important;
+  color: var(--clr-3) !important;
+  font-family: "Ubuntu", sans-serif !important;
+  overflow: hidden;
+}
+
+.home,
+.about,
+.proj {
+  position: absolute;
+  font-size: 12px !important;
+  font-weight: 900;
+  font-family: "Ubuntu", sans-serif !important;
+}
+.home {
+  left: 200px;
+}
+.about {
+  position: absolute;
+  left: 85%;
+}
+
+.proj {
+  position: absolute;
+  left: 70%;
+}
+
+.button-o {
+  background-color: var(--clr-2) !important;
+  color: var(--clr-1) !important;
+}
+.one {
+  color: var(--clr-3);
+}
+
+.lab {
+  top: 28%;
+  font-size: 140px;
+  font-weight: 700;
+}
+
+.hund {
+  top: 95%;
+  font-size: 100px;
+  font-weight: 900;
+  width: 200px;
+  left: 6%;
+  font-family: "Ubuntu", sans-serif !important;
+}
+.verticaltext {
+  transform: rotate(-90deg);
+  transform-origin: left top 0;
+}
+
+.top-text {
+  margin-top: 16%;
+}
+
+.text-one h4 {
+  font-size: 14px;
+}
+
+.text-one p {
+  font-size: 8px !important;
+}
+
+.text-three p {
+  transform: rotate(90deg);
+  transform-origin: left top 10;
+}
+
+.text-tow p {
+  font-size: 8px !important;
+}
+.text-three {
+  font-size: 15px;
+  left: 80%;
+  top: 30%;
+}
+
+.text-three:after {
+  content: "";
+  display: inline-block;
+  height: 0.5em;
+  vertical-align: top;
+  width: 50%;
+  margin-right: 0;
+  margin-left: 25px;
+  margin-top: -48% !important;
+  border-bottom: 1px solid black;
+  transform: rotate(90deg);
+  transform-origin: left top 10 10;
+}
+
+.arw {
+  color: var(--clr-2);
+}
+
+.o-box {
+  height: 280px;
+  width: 100%;
+  top: 46%;
+  background: rgba(248, 62, 24, 0.7);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(0.1px);
+  -webkit-backdrop-filter: blur(0.1px);
+  z-index: 100;
+}
+
+.b-box {
+  background-color: var(--clr-3);
+  height: 57px;
+  width: 70px;
+  top: 80%;
+}
+
+.img-1 {
+  height: 700px;
+  width: 600px;
+  z-index: -1;
+  right: 50px !important;
+  top: -2%;
+  position: absolute;
+}
+
+@media only screen and (max-width: 600px) {
+  .text-one,
+  .text-tow,
+  .top-nab,
+  .hund {
+    display: none;
+  }
+
+  .o-box {
+    width: 100%;
+    left: 15%;
+    top: 52%;
+  }
+
+  .b-box {
+    top: 0%;
+  }
+  .img-1 {
+    height: 700px;
+    width: 600px;
+    z-index: -1;
+    right: -190px !important;
+    top: -2%;
+    position: absolute;
+  }
+
+  .lab {
+    top: 10%;
+    font-size: 90px;
+    left: 15%;
+  }
+  .text-three {
+    font-size: 12px;
+    left: -29%;
+    top: 63%;
+
+  }
+
+  .text-three:after {
+    content: "";
+    display: inline-block;
+    height: 0.5em;
+    vertical-align: top;
+    width: 22%;
+    margin-left: 34%;
+    margin-top: -50% !important;
+    border-bottom: 1px solid black;
+    transform: rotate(90deg);
+    transform-origin: left top 10 10;
+  }
+}
